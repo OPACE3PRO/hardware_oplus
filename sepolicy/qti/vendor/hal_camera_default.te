@@ -29,9 +29,12 @@ allow hal_camera_default hal_oplus_performance_aidl_service:service_manager find
 allow hal_camera_default self:capability ipc_lock;
 allow hal_camera_default proc:file write;
 
+allow hal_camera_default vendor_proc_boost_pool:file { write open getattr };
+
 r_dir_file(hal_camera_default, input_device)
 r_dir_file(hal_camera_default, proc_version)
 r_dir_file(hal_camera_default, vendor_proc_oplus_version)
+rw_dir_file(hal_camera_default, vendor_proc_boost_pool)
 rw_dir_file(hal_camera_default, vendor_sysfs_tof)
 
 set_prop(hal_camera_default, vendor_camera_prop)
