@@ -48,3 +48,6 @@ type vendor_proc_ultrasound, fs_type, proc_type;
 
 # Versioning
 type vendor_proc_oplus_version, fs_type, proc_type;
+
+# Wireless Charge
+type sysfs_oplus_wireless, fs_type, sysfs_type;
