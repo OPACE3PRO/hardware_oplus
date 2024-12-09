@@ -175,4 +175,6 @@ genfscon sysfs /devices/platform/vendor/vendor:motor_pl/wakeup u:object_r:sysfs_
 
 # Wireless Charging
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_wls/oplus_mms/wireless/wireless/online u:object_r:sysfs_oplus_wireless:s0
-genfscon sysfs /devices/platform/soc/soc:oplus,mms_wired/oplus_mms/wired/usb/type u:object_r:sysfs_oplus_wireless:s0
+genfscon sysfs /devices/platform/soc/soc:oplus,chg_wls/oplus_mms/wireless/wireless/type   u:object_r:sysfs_oplus_wireless:s0
+genfscon sysfs /devices/platform/soc/soc:oplus,mms_wired/oplus_mms/wired/usb/type         u:object_r:sysfs_oplus_wireless:s0
+genfscon sysfs /devices/platform/soc/soc:oplus,mms_wired/oplus_mms/wired/usb/online       u:object_r:sysfs_oplus_wireless:s0
